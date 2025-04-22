@@ -1,9 +1,15 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --font-neoneon: "Neoneon", sans-serif;
+  --font-glacial: "Glacial Indifference", sans-serif; 
+  --font-schoolbell: "Schoolbell", cursive; 
 }
 
 @theme inline {
@@ -12,6 +18,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-glacial: var(--font-glacial);
+  --font-schoolbell: var(--font-schoolbell);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,4 +34,110 @@ body {
   color: var(--foreground);
   
   font-family: var(--font-neoneon);
+}
+
+
+@font-face {
+  font-family: 'Neoneon';
+  src: url('/fonts/neoneon.ttf') format('truetype'); /* Adjust filename if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@layer utilities {
+  .bg-main {
+      background-image: url('/images/Main_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+}
+
+
+.glow {
+  text-shadow: 0 0 10px #fff, 0 0 20px #f0f, 0 0 30px #f0f;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .icon-grid {
+    max-width: 60vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .icon-grid {
+    max-width: 70vw;
+
+  
+  }
+
+
+}
+
+
+.nav-heading {
+  font-size: 4vw;
+  line-height: 2;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 3s infinite;
+}
+
+
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-sway {
+  animation: sway 2.5s ease-in-out infinite;
+}
+
+
+
+
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2.4s infinite ease-in-out;
 }
