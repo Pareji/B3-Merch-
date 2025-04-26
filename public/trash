@@ -1,0 +1,240 @@
+      <div className="absolute left-[76px] top-[76px] w-[150px] h-[608px]">
+        <div className="relative w-full h-full">
+          {/* Top icon */}
+          <div className="absolute left-[33px] top-[1px] w-[61px] h-[45px] transform -rotate-[1.179deg] hover:rotate-3 transition-transform duration-500">
+            <div className="w-full h-full relative overflow-hidden">
+              <div className="pr-[0.08px] pb-[0.01px] pl-[0.09px] flex items-center justify-center w-[61px] h-[45px] relative overflow-hidden">
+                <div className="w-[60px] h-[45px] relative overflow-hidden">
+                  <img src="/images/group1.svg" className="w-[62%] h-[82%] absolute right-[3%] left-[36%] bottom-[11%] top-[7%]" />
+                  <img src="/images/group2.svg" className="w-[40%] h-[33%] absolute right-[56%] left-[4%] bottom-[7%] top-[60%]" />
+                  <img src="/images/group3.svg" className="w-[16%] h-[25%] absolute right-[17%] left-[67%] bottom-[26%] top-[48%]" />
+                  <img src="/images/group4.svg" className="w-[27%] h-[52%] absolute right-[27%] left-[46%] bottom-[26%] top-[23%]" />
+                  <img src="/images/group5.svg" className="w-[28%] h-[52%] absolute right-[2%] left-[71%] bottom-[42%] top-[5%]" />
+                  <img src="/images/group6.svg" className="w-[40%] h-[70%] absolute right-[25%] left-[34%] bottom-[9%] top-[20%]" />
+                  <img src="/images/group7.svg" className="w-[45%] h-[37%] absolute right-[55%] left-[0%] bottom-[3%] top-[60%]" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Left line */}
+          <div className="absolute left-[9px] top-[242px] w-[201px] h-[36px] transform -rotate-[92.654deg] hover:rotate-[270deg] transition-transform duration-700">
+            <img src="/images/group0.svg" className="absolute left-[-2px] top-[-2px]" />
+          </div>
+
+          {/* Right line */}
+          <div className="absolute left-[76px] top-[232px] w-[201px] h-[36px] transform rotate-[84.845deg] hover:rotate-[90deg] transition-transform duration-700">
+            <img src="/images/group8.svg" className="w-[99%] h-[95%] absolute right-[0%] left-[0%] bottom-[2%] top-[3%]" />
+          </div>
+
+          {/* Bottom graphics */}
+          <div className="absolute left-[1px] top-[447px] w-[117px] h-[164px] transform -rotate-[12.246deg] hover:-rotate-6 transition-transform duration-500">
+            <div className="w-full h-full relative overflow-hidden">
+              <div className="flex items-center justify-center w-[117px] h-[164px] relative overflow-hidden">
+                <div className="w-[117px] h-[164px] relative overflow-hidden">
+                  <img src="/images/group9.svg" className="w-full h-[99%] absolute right-0 left-0 bottom-0 top-[1%]" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      {/* 🎯 Left Decorative Elements */}
+
+     <div className="absolute left-[65px] top-[70px] w-[160px] h-[600px] pointer-events-none select-none z-10 scale-[1.50]">
+        <div className="relative w-full h-full animate-sway origin-top">
+
+          {/* Pin */}
+          <div className="absolute left-[45px] top-[-10px] w-[40px] h-[40px]">
+            <img src="/images/top pin.svg" alt="Pin" className="w-full h-full object-contain" />
+          </div>
+
+          {/* Hanging Line */}
+          <div className="absolute left-[10px] top-[30px] w-[120px] h-[400px]">
+            <img src="/images/Group 1.svg" alt="Line" className="w-full h-full object-contain" />
+          </div>
+
+          {/* Bag */}
+          <div className="absolute left-[15px] top-[430px] w-[120px] h-[150px]">
+            <img src="/images/just bag.svg" alt="Bag" className="w-full h-full object-contain" />
+          </div>
+
+          {/* Text on Bag */}
+          <div className="absolute left-[45px] top-[465px] w-[70px] h-[100px] transform -rotate-[13deg] hover:-rotate-[6deg] transition-transform duration-500 z-20">
+            <div className="flex flex-col w-full h-full items-center justify-center text-black font-glacial text-[16px] leading-[1.3] text-center drop-shadow-md">
+              <span>New</span>
+              <span>Merch</span>
+              <span>Drop!</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* Hero Section Wrapper */}
+<div className="w-full h-screen flex items-center justify-center px-4">
+  <div className="relative w-full max-w-[1200px] flex flex-col md:flex-row items-center justify-center gap-8 scale-90 md:scale-100 transition-all duration-700">
+
+          {/* Logo */}
+
+
+          {/* Text Block */}
+          <div className="flex flex-col items-center justify-center text-center space-y-6">
+
+            <div className="w-[220px] md:w-[350px] lg:w-[459px] transition-all duration-700 hover:scale-105">
+              <img
+                className="w-full h-auto object-cover"
+                src="/images/logo.png"
+                alt="Logo"
+              />
+            </div>
+            {/* Title */}
+            <h1 className="text-white text-[64px] md:text-[100px] lg:text-[157px] leading-none animate-pulse">
+              Merch
+            </h1>
+
+          </div>
+          
+
+
+        
+      </div>
+                    {/* Subtitle */}
+             <p className="text-white font-schoolbell text-[28px] md:text-[44px] lg:text-[60px] leading-[1] whitespace-nowrap animate-fadeIn">
+                Wear your dream...
+              </p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+             #here iss the latest one 
+
+
+
+
+            <div className="min-h-screen flex flex-col justify-center items-center gap-3">
+            {/* Logo + MERCH Row */}
+            <div className="flex items-center justify-center gap-3 align-baseline">
+              <img
+                src="/images/logo.png"
+                alt="Logo"
+                className="h-[300px] md:h-[360px] lg:h-[400px] drop-shadow-2xl"
+              />
+              <h1 className="text-white text-[100px] md:text-[140px] lg:text-[157px] leading-none font-bold drop-shadow-[4px_4px_0px_rgba(0,0,0,0.6)] animate-pulse">
+                MERCH
+              </h1>
+            </div>
+  
+            {/* Tagline */}
+            <p className="text-white text-center font-schoolbell text-[32px] md:text-[40px] lg:text-[48px] leading-tight animate-fadeIn drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">
+              Wear your dream...
+            </p>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+        {/* Shop Now Button */}
+        <div className="absolute left-[309px] top-[571px] w-[253px] h-[76px] transition-transform hover:scale-105 duration-300">
+          <div className="relative w-full h-full">
+  
+            <div className="absolute left-[35px] top-[10px] w-[184px] h-[55px] flex items-center justify-center">
+              <span className="text-[#f0ffde] text-center font-glacial text-[37px] leading-[56px]">
+                Shop Now!
+              </span>
+            </div>
+          </div>
+        </div>
+  
+        {/* Join Us Button */}
+        <div className="absolute left-[789px] top-[571px] w-[253px] h-[76px] transition-transform hover:scale-105 duration-300">
+          <div className="relative w-full h-full">
+  
+  
+            <div className="absolute left-[35px] top-[10px] w-[184px] h-[55px] flex items-center justify-center">
+              <span className="text-[#ffdbf1] text-center font-glacial text-[38px] leading-[56px]">
+                Join Us!
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              {/* Left Decorative Element - Full Hanger */}
+      <div className="absolute left-[76px] top-[76px] w-[150px] h-[600px] pointer-events-none select-none">
+      <div className="relative w-full h-full animate-sway origin-top">
+        {/* Full Hanger SVG */}
+        <img
+          src="/images/without_text.svg"
+          alt="Merch Hanger"
+          className="w-full h-full object-contain"
+        />
+
+        {/* Hanging Text inside the tag */}
+        <div className="absolute left-[45px] top-[467px] w-[72px] h-[100px] transform -rotate-[12.246deg] hover:-rotate-[3deg] transition-transform duration-700 ease-in-out z-20 pointer-events-none animate-bounce-slow">
+          <div className="flex flex-col w-full h-full items-center justify-center text-black font-glacial text-[22px] leading-[1.3] text-center drop-shadow-md hover:drop-shadow-[0_0_6px_rgba(0,0,0,0.6)] transition-all duration-300">
+            <span>New</span>
+            <span>Merch</span>
+            <span>Drop!!</span>
+          </div>
+        </div>
+      </div>
+    </div>

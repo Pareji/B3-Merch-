@@ -24,13 +24,13 @@ export default function B3MerchLanding() {
           <motion.div className="w-1/5" initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }}>
             <img src="/images/logo.png" alt="B3 Logo" className="w-full" />
           </motion.div>
-          <motion.h1 className="w-4/5 text-6xl drop-shadow-lg" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }}>
+          <motion.h1 className="w-4/5 text- 10xl drop-shadow-lg" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }}>
             MERCH
           </motion.h1>
         </div>
         
         {/* Second Box */}
-        <motion.p className="text-xl font-schoolbell mb-5 drop-shadow-md" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+        <motion.p className="text-xl font-schoolbell mb-10 drop-shadow-md" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           Wear your dream...
         </motion.p>
         

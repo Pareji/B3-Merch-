@@ -1,4 +1,4 @@
-import { HeroSection } from './HeroSection';
+import { HeroSection } from './Herosection';
 
 
 export const metadata = {

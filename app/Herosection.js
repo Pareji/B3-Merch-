@@ -1,69 +1,80 @@
 "use client";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export const HeroSection = ({ className }) => {
+  // Client-side only rendering for hydration error prevention
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
-    <section 
-      className={`bg-main relative h-[760px] w-full overflow-hidden ${className}`}
+    <section
+      className={`bg-main relative min-h-[600px] md:h-[760px] w-full overflow-hidden ${className}`}
+      style={{
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-
-
-
-
-        <div className="min-h-screen flex flex-col justify-center items-center gap-3">
-          {/* Logo + MERCH Row */}
-          <div className="flex items-center justify-center gap-3 align-baseline">
-            <img
-              src="/images/logo.png"
-              alt="Logo"
-              className="h-[300px] md:h-[360px] lg:h-[400px] drop-shadow-2xl"
-            />
-            <h1 className="text-white text-[100px] md:text-[140px] lg:text-[157px] leading-none font-bold drop-shadow-[4px_4px_0px_rgba(0,0,0,0.6)] animate-pulse">
-              MERCH
-            </h1>
-          </div>
-
-          {/* Tagline */}
-          <p className="text-white text-center font-schoolbell text-[32px] md:text-[40px] lg:text-[48px] leading-tight animate-fadeIn drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">
-            Wear your dream...
-          </p>
-        </div>
-
-
-
-
-
-      
-
-      
       {/* Left Decorative Element - Full Hanger */}
-      <div className="absolute left-[76px] top-[76px] w-[150px] h-[600px] pointer-events-none select-none">
-        <div className="relative w-full h-full animate-sway origin-top">
-          {/* Full Hanger SVG */}
-          <img
-            src="/images/without_text.svg"
-            alt="Merch Hanger"
-            className="w-full h-full object-contain"
-          />
+      {isMounted && (
+        <div className="absolute left-[20px] md:left-[76px] top-[76px] w-[100px] md:w-[150px] h-[300px] md:h-[600px] pointer-events-none select-none">
+          <div className="relative w-full h-full animate-sway origin-top">
+            {/* Full Hanger SVG */}
+            <img
+              src="/images/without_text.svg"
+              alt="Merch Hanger"
+              className="w-full h-full object-contain"
+            />
 
-          {/* Hanging Text inside the tag */}
-          <div className="absolute left-[45px] top-[467px] w-[72px] h-[100px] transform -rotate-[12.246deg] hover:-rotate-[3deg] transition-transform duration-700 ease-in-out z-20 pointer-events-none animate-bounce-slow">
-            <div className="flex flex-col w-full h-full items-center justify-center text-black font-glacial text-[22px] leading-[1.3] text-center drop-shadow-md hover:drop-shadow-[0_0_6px_rgba(0,0,0,0.6)] transition-all duration-300">
-              <span>New</span>
-              <span>Merch</span>
-              <span>Drop!!</span>
+            {/* Hanging Text inside the tag */}
+            <div className="absolute left-[30px] md:left-[45px] top-[200px] md:top-[467px] w-[50px] md:w-[72px] h-[80px] md:h-[100px] transform -rotate-[12.246deg] hover:-rotate-[3deg] transition-transform duration-700 ease-in-out z-20 pointer-events-none animate-bounce-slow">
+              <div className="flex flex-col w-full h-full items-center justify-center text-black font-glacial text-[16px] md:text-[22px] leading-[1.3] text-center drop-shadow-md hover:drop-shadow-[0_0_6px_rgba(0,0,0,0.6)] transition-all duration-300">
+                <span>New</span>
+                <span>Merch</span>
+                <span>Drop!</span>
+              </div>
             </div>
           </div>
         </div>
+      )}
+
+
+
+      {/* Main Content Container */}
+      <div className="flex flex-col items-center justify-center h-full w-full pt-[100px] md:pt-0">
+        {/* Logo and Text */}
+        <div className="flex flex-col items-center mb-12">
+          {/* Logo with B3 */}
+          <div className="flex items-end justify-center mb-4 gap-5">
+            <img 
+              src="/images/logo.png" 
+              alt="B3 Logo" 
+              className="h-[120px] md:h-[180px] object-contain mb-2.5 md:mb-6.5"
+            />
+            <h1 className="text-[60px] md:text-[120px] font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-100 ml-2 translate-y-2 md:translate-y-3 ">MERCH</h1>
+          </div>
+          
+          {/* Tagline */}
+          <p className="text-[28px] md:text-[42px] text-white font-schoolbell">Wear your dream...</p>
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 mt-4">
+          <Link href="/shop">
+            <button className="px-8 py-3 text-[20px] md:text-[24px] font-glacial text-green-300 border-2 border-white rounded-full hover:bg-white/10 transition-colors duration-300">
+              Shop Now!
+            </button>
+          </Link>
+          <Link href="/join">
+            <button className="px-8 py-3 text-[20px] md:text-[24px] font-glacial text-purple-300 border-2 border-white rounded-full hover:bg-white/10 transition-colors duration-300">
+              Join Us!
+            </button>
+          </Link>
+        </div>
       </div>
-
-
-
-
-
-
-
-
-
     </section>
   );
 };
