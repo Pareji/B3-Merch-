@@ -44,15 +44,53 @@ body {
   font-style: normal;
 }
 
-
+/*
 @layer utilities {
   .bg-main {
       background-image: url('/images/Main_bg.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+} */
+
+/* so yaha pe hamne ek invisible bg ka dev box banaya hai jo landscape mai normal rahega pr potrair devices mai bg imae gayabb krke peeche chupa dusri bg image le aayega jo perfectly potrait ke hisab se hoga */
+@layer utilities {
+  .bg-image-fixed {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    background-image: url('/images/Main_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  @media (orientation: portrait) {
+    .bg-image-fixed {
+      background-image: none;
+    }
+
+    .bg-image-fixed::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('/images/Main_bg.jpg') no-repeat center center;
+      background-size: cover;
+      transform: rotate(90deg);
+      width: 100vh; /* swap dimensions */
+      height: 100vw;
+      transform-origin: center;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+    }
   }
 }
+
+
 
 
 .glow {
