@@ -1,5 +1,5 @@
 import { HeroSection } from './Herosection';
-import ProductSection from '../components/ProductSection';
+import ProductSection from '../components/newarrival';
 
 export const metadata = {
   title: "b³ Merch",

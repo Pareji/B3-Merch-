@@ -97,7 +97,20 @@ body {
   text-shadow: 0 0 10px #fff, 0 0 20px #f0f, 0 0 30px #f0f;
 }
 
+.text-glow-yellow {
+  text-shadow: 0 0 6px #fff000, 0 0 12px #ffde59;
+}
 
+
+.text-glow-red {
+  color: #be4747;
+  text-shadow:    0 0 6px #fb4646, 0 0 10px #e77171;
+}
+
+.text-glow-green {
+  color: #7fff7f;
+  text-shadow: 0 0 3px #C1FF72, 0 0 10px #c1ff72;
+}
 
 
 
