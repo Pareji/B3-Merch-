@@ -125,7 +125,7 @@ export default function ProductSection({ products = [] }) {
           ))}
 
             {totalPages > 0 && (
-              <div className="mt-6 flex justify-center gap-3">
+              <div className="mt-6 flex justify-baseline self-center gap-3">
                 {Array.from({ length: totalPages }).map((_, index) => (
                   <button
                     key={index}
@@ -151,7 +151,7 @@ export default function ProductSection({ products = [] }) {
                 key={index}
                 onClick={() => changePage(index)}
                 className={`w-2.5 h-2.5 rounded-full transition-all  transform -translate-y-1/2 ${currentPage === index
-                    ? "bg-green-400 shadow shadow-green-400/50 scale-110"
+                    ? "bg-red-400 shadow shadow-red-400/50 scale-110"
                     : "bg-gray-400 opacity-50"
                   }`}
                 aria-label={`Go to page ${index + 1}`}
